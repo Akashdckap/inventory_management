@@ -1,0 +1,297 @@
+
+/* below the code for the font-icons  */
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+/* below the code for the font-family  */
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+    --primary-text-color: #0DF2DC;
+    --primary-radient-color: #1A242E;
+    --secondary-text-color: #FFFFFF;
+    --background-body-color: #10161C;
+}
+
+body {
+    background-color: var(--background-body-color);
+}
+
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #1A242E 0%, #222E3B 100%);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* z-index: -1; */
+    padding: 34px;
+}
+
+.top-container .organization-name {
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.left-side-nav-container {
+    display: flex;
+}
+
+.left-nav-bar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    padding: 3px;
+    margin: 24px 20px;
+    font-size: 16px;
+    /* position: relative; */
+}
+
+.left-nav-bar>li {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.left-nav-bar>li {
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+.nav-list {
+    background-color: var(--primary-radient-color);
+    height: 100vh;
+    width: 222px;
+    display: flex;
+    justify-content: start;
+    /* position: relative; */
+    z-index: -1;
+    position: fixed;
+    cursor: pointer;
+    top: 80px;
+    /* margin: 72px 0px; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-right-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.search-container {
+    margin: 0px 1em;
+}
+
+input.searchInput {
+    height: 40px;
+    width: 300px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: var(--primary-radient-color);
+    /* background: radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%); */
+    color: turquoise;
+    padding: 0px 20px 0px 57px;
+    font-size: 16px;
+    outline: none;
+}
+
+input.searchInput::placeholder {
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+input.searchInput:hover{
+    border: 0.5px solid var(--primary-text-color);
+    animation-name: expandWidth;
+    transition: ease-in-out;
+    animation-duration: 2s;
+}
+input.searchInput:focus{
+    border: 0.5px solid var(--primary-text-color);
+    animation-name: expandWidth;
+    transition: ease-in-out;
+    animation-duration: 2s;
+}
+@keyframes expandWidth{
+    from{
+        width:300px;
+    }
+    to{
+        width: 350px;
+    }
+}
+span.search-icon {
+    position: relative;
+    left: 38px;
+    top: 2px;
+    color: var(--secondary-text-color);
+}
+
+.top-right-container img.user-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* body::-webkit-scrollbar { */
+    /* width: 5px;
+}
+
+body::-webkit-scrollbar {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar {
+    background: red;
+    border-radius: 2px;
+} */
+
+
+span.notification-icon {
+    font-size:20px;
+    cursor: pointer;
+    color: var(--secondary-text-color);
+}
+
+.nav-list .setting-contain {
+    position: relative;
+    top:50px;
+}
+
+.nav-list>a {
+    cursor: auto;
+}
+
+.sideNav-icon {
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: revert;
+    align-items: center;
+    gap: 20px;
+}
+
+.active {
+    color: var(--primary-text-color);
+}
+
+.all-count-container {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+}
+
+.organization-logo>img {
+    height: 50px;
+    width: 50px;
+}
+
+.organization-logo-container {
+    display: flex;
+    gap: 14px;
+    margin: 7px 0px;
+}
+
+.hello-name {
+    color: var(--primary-text-color);
+}
+
+.organization-small-name {
+    color: var(--secondary-text-color);
+}
+
+.stock-box-container {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    height: 200px;
+    width: 230px;
+    padding: 15px;
+    border-radius: 16px;
+    border-radius: 16px;
+    background-color: var(--primary-radient-color);
+    background: radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%);
+}
+
+.main-stock-containers {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 26px;
+    margin: 25px auto;
+}
+p{
+    color: wheat;
+}
+.stock-name {
+    color: var(--secondary-text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.new-arrivels {
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 20px;
+    border-style: none;
+    color: var(--secondary-text-color);
+    background-color: var(--primary-radient-color);
+    margin-left: 35.5pc;
+    /* background-color: #36475a; */
+    /* background: var(--gradient-third, radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%)); */
+}
+.new-arrivels:hover{
+    color: var(--primary-text-color);
+    background-color:var(--primary-radient-color);
+    cursor: pointer;
+    border: 0.5px solid var(--primary-text-color);
+}
+.stock-box-container p.count-stocks {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--primary-text-color);
+}
+.stock-box-container .stock-type-name{
+    color: var(--secondary-text-color);
+}
+.stock-box-container:hover{
+    border: 0.5px solid var(--primary-text-color);
+    transition: all;
+    transform: scale(1.1 1.1);
+    cursor: pointer;
+}
+.sideNav-name{
+    font-size: 16px;
+    font-weight: 550;
+}

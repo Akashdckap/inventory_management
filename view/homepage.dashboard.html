@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <----------Below the one line code for using icons the site name is fontawesome---------------- > -->
+    <script src="https://kit.fontawesome.com/f33ac049a7.js" crossorigin="anonymous"></script>
+    <!-- <----------Below the one line code for linking the external css page ---------------- > -->
+    <link rel="stylesheet" href="../css/homepage.dashboard.css">
+    <!-- <----------Below the one line code for linking the using icons the site name is flaticon page ---------------- > -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <title>Homepage Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <section class="homepage-main-container">
+            <header>
+                <div class="top-container">
+                    <h1 class="organization-name">Inventory</h1>
+                    <div class="top-right-container">
+                        <div class="search-container">
+                            <span class="search-icon"><i class="fi fi-rs-search"></i></span>
+                            <input type="text" placeholder="Search products,suppliers,orders" class="searchInput">
+                        </div>
+                        <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+                        <img src="../project images/dashboardImages/Balaprofile.png" class="user-image"
+                            alt="user-image">
+                    </div>
+                </div>
+            </header>
+            <div class="left-side-nav-container">
+                <div class="nav-list">
+                    <ul>
+                        <a href="/" class="action">
+                            <div class="left-nav-bar home-contain">
+                                <p class="sideNav-icon active">
+                                    <span><i class="fi fi-rs-home"></i></span>
+                                    <span class="sideNav-name">DashBoard</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Inventory-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-truck-loading "></i></span>
+                                    <span class="sideNav-name">Inventory</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Integrations-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-square-poll-vertical"></i></span>
+                                    <span class="sideNav-name">Integrations</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Vendors-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-circle-user"></i></span>
+                                    <span class="sideNav-name">Vendors</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Orders-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-box-open"></i></span>
+                                    <span class="sideNav-name">Orders</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Invite-users-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-users"></i></span>
+                                    <span class="sideNav-name">Invite users</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Sold-items-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-ss-coins"></i></span>
+                                    <span class="sideNav-name">Sold items</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="action">
+                            <div class="left-nav-bar Low-stocks-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-shopping-bag"></i></span>
+                                    <span class="sideNav-name">Low stocks</span>
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="action">
+                            <div class="left-nav-bar setting-contain">
+                                <p class="sideNav-icon">
+                                    <span><i class="fi fi-rs-settings"></i></span>
+                                    <span class="sideNav-name">Settings</span>
+                                </p>
+                            </div>
+                        </a>
+
+                        <!-- <a href="/logout" class="action">
+                            <div class="left-nav-bar setting-contain">
+                                <img src="../project images/dashboardImages/Settings.png" alt="">
+                                <span><i class="fa-solid fa-gear sideNav-icon"></i></span>
+                                <li class="setting">Logout</li>
+                            </div>
+                        </a> -->
+                    </ul>
+                </div>
+                <div class="all-count-container">
+                    <div class="organization-logo-container">
+                        <div class="organization-logo">
+                            <img src="../project images/dashboardImages/secondary logo 1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="hello-name">Hello, Bala
+                                <?php echo $_SESSION['email'];?>
+                            </h2>
+                            <p class="organization-small-name">DCKAP</p>
+                        </div>
+                        <div>
+                            <button class="new-arrivels">New arrivels</button>
+                        </div>
+                    </div>
+                    <div class="main-stock-containers">
+                        <div class="stock-box-container">
+                            <h4 class="stock-name">Total stocks</h4>
+                            <img src="../project images/dashboardImages/Quantity.png" alt="">
+                            <p class="count-stocks">670</p>
+                            <h4 class="stock-type-name">Total products</h4>
+                        </div>
+                        <div class="stock-box-container">
+                            <h4 class="stock-name">Stocks sold</h4>
+                            <img src="../project images/dashboardImages/Sales.png" alt="">
+                            <p class="count-stocks">50</p>
+                            <h4 class="stock-type-name">Total products</h4>
+                        </div>
+                        <div class="stock-box-container">
+                            <h4 class="stock-name">Remaining stocks</h4>
+                            <img src="../project images/dashboardImages/Purchase.png" alt="">
+                            <p class="count-stocks" style="color: #F81919;">2</p>
+                            <h4 class="stock-type-name">Total products</h4>
+                        </div>
+                        <div class="stock-box-container">
+                            <h4 class="stock-name">Remaining stocks</h4>
+                            <img src="../project images/dashboardImages/allUsers.png" alt="">
+                            <p class="count-stocks">2</p>
+                            <h4 class="stock-type-name">Total users</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        </section>
+    </main>
+    <script src="../js/homepage.js"></script>
+</body>
+
+</html>

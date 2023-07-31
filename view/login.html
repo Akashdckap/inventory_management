@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../project images/loginImage/FrameloginSignup.png">
+    <script src="https://kit.fontawesome.com/122ac14709.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <h1 class="logoIMS">Dckap Inventory</h1>
+        </div>
+        <div class="signBox">
+
+            
+            <?php
+                    if (isset($_SESSION['invalid email'])){
+                        ?>
+                        <h4 class="errMsg"><?php echo $_SESSION['invalid email'];?></h4>
+                        <?php
+                        unset($_SESSION['invalid email']);
+                    }
+                    else{
+                        unset($_SESSION['invalid email']);
+                    }
+                    ?>
+            
+            <div class="boxheading">
+                <h2>Hi Welcome back</h2>
+                <p class="Sign">Sign in with your credentials</p>
+            </div>
+            <form action="/loginLogic" class="login" method="POST">
+                <div class="Email">
+                    <label for="" class="emailLable">Email <span>*</span></label>
+                    <br>
+                    <input type="email" name="email" class="emailinput" placeholder="Enter your Email">
+                    <div class="errmail" id="email">e</div>
+                </div>
+                <div class="password">
+                    <label for="" class="passLable">password <span>*</span></label>
+                    <br>
+                    <input type="password" name="password" class="passwordInput" placeholder="Enter your Password">
+                    <i class="fa-solid fa-eye-slash" id="eye"></i>
+                    <div class="errpass" id="password">e</div>
+                </div>
+                <div class="signupbtn">
+                    <button type="submit" class="LoginBtn">Login</button>
+                </div>
+    
+
+            </form>
+            <!-- <p>Don’t have an account <a href="" class="signupLink">Signup</a></p> -->
+        </div>
+        <div class="sideimage">
+            <img class="sideImg" src="../project images/loginImage/FrameloginSignup.png" alt="">
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

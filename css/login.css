@@ -1,0 +1,168 @@
+
+:root{
+    --background-color: #10161C;
+    --logoColor:#0DF2DC;
+    --border-radius-color: gray;
+    --font-color:#fff;
+    --input-border-color: #059184;
+    --login-or-signup-btn-background-color:#059184;
+    --login-background: linear-gradient(#131A21,#1A242E);
+    --signup-link-font-color: #0DF2DC;
+    --Importent-Color-star-color: red;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.main{
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.logo{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.logoIMS{
+    font-size: 36px;
+    color: var(--logoColor);
+    font-weight: 300;
+}
+
+.signBox {
+    margin-left: 70px;
+    margin-top: 35px;
+    height: 477px;
+    width: 402;
+    border: 2px solid var(--border-radius-color);
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--font-color);
+    background: var(--login-background);
+}
+
+.Sign{
+    font-size: 18px;
+    margin-right: 97px;
+    margin-top: 15px;
+}
+
+.emailinput{
+    outline: 0;
+    border: 0;
+    color: var(--font-color);
+    border-bottom: 2px solid var(--input-border-color);
+    height: 50px;
+    width: 320px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.passwordInput{
+    outline: 0;
+    border: 0;
+    color: var(--font-color);
+    border-bottom: 2px solid var(--input-border-color);
+    height: 50px;
+    width: 320px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.LoginBtn{
+    height: 40px;
+    width: 320px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--login-or-signup-btn-background-color);
+    color: var(--font-color);
+    margin-top: 20px;
+}
+
+.signupbtn {
+    margin-top: 20px;
+}
+
+.password{
+    position: relative;
+}
+
+#eye{
+    position: absolute;
+    left: 329px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.emailLable {
+    margin-right: 272px;
+}
+
+.passLable{
+    margin-right: 241px;
+}
+.errMsg{
+    color: red;
+    
+}
+.signupLink{
+    text-decoration: none;
+    color: var(--signup-link-font-color);
+}
+
+h2 {
+    margin-right: 123px;
+}
+
+.boxheading {
+    margin-top: 40px;
+}
+
+.Email {
+    margin-top: 40px;
+}
+
+.password {
+    margin-top: 20px;
+}
+
+.sideimage {
+    position: absolute;
+    top: 0px;
+    left: 620px;
+}
+
+.sideImg{
+    height: 580px;
+}
+
+span{
+    color: var(--Importent-Color-star-color);
+}
+
+div#email {
+    margin-right: 310px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+div#password {
+    width: 216px;
+    margin-right: 310px;
+    margin-top: 10px;
+    visibility: hidden;
+}
