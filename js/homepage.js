@@ -3,7 +3,7 @@
 let allContainers = document.querySelectorAll(".sideNav-icon")
 for (let i = 0; i < allContainers.length; i++) {
     allContainers[i].addEventListener("click", (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         for (let i = 0; i < allContainers.length; i++) {
             allContainers[i].classList.remove('active')
             // allContainers[i].nextElementSibling.classList.remove("active");

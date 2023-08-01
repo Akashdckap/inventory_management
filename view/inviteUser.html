@@ -6,7 +6,7 @@
     <!-- <----------Below the one line code for using icons the site name is fontawesome---------------- > -->
     <script src="https://kit.fontawesome.com/f33ac049a7.js" crossorigin="anonymous"></script>
     <!-- <----------Below the one line code for linking the external css page ---------------- > -->
-    <link rel="stylesheet" href="../css/homepage.dashboard.css">
+    <link rel="stylesheet" href="../css/inviteUsers.css">
     <!-- <----------Below the one line code for linking the using icons the site name is flaticon page ---------------- > -->
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
@@ -107,63 +107,78 @@
                             </div>
                         </a>
 
-                        <!-- <a href="/logout" class="action">
+                        <a href="/logout" class="action">
                             <div class="left-nav-bar setting-contain">
                                 <img src="../project images/dashboardImages/Settings.png" alt="">
                                 <span><i class="fa-solid fa-gear sideNav-icon"></i></span>
                                 <li class="setting">Logout</li>
                             </div>
-                        </a> -->
+                        </a>
                     </ul>
                 </div>
                 
-                <div class="all-count-container">
-                    <div class="organization-logo-container">
-                        <div class="organization-logo">
-                            <img src="../project images/dashboardImages/secondary logo 1.png" alt="">
+                <div class="inviteuserCon">
+                    <!-- <h1>Gokul</h1> -->
+                    <div class="inviteUseropa">
+                        <div class="inviteHead">
+                            <div class="alluser">
+                                <p class="alluserTag">All Users</p>
+                            </div>
+                            <div class="invitebtn">
+                                <button class="Addinvitebtn">Invite</button>
+                            </div>
                         </div>
-                        <div>
-                            <h2 class="hello-name">Hello, Bala
-                                <?php echo $_SESSION['email'];?>
-                            </h2>
-                            <p class="organization-small-name">DCKAP</p>
+                        <div class="line"></div>
+                        <div class="userlist">
+                            <div class="userProfilrimgs">
+                                <img src="../project images/dashboardImages/Balaprofile.png" class="userProfilrimg">
+                            </div>
+                            <div class="emailAndname">
+                                <p class="userName">Vignesh</p>
+                                <p>vigneshselvarajdckap@gmail.com</p>
+                            </div>
+                            <div class="role">
+                                <p class="userRoleType">Admin</p>
+                            </div>
+                            <div class="editicon">
+                                <i class="fa-regular fa-pen-to-square" id="editSymbol"></i>
+                                <p class="edHov">Edit</p>
+                            </div>
+                            <div class="deleteIcon">
+                                <i class="fa-solid fa-trash" id="deleteSymbol"></i>
+                                <p class="delHov">Delete</p>
+                            </div>
                         </div>
-                        <div>
-                            <button class="new-arrivels">New arrivels</button>
+                        <div class="userlist">
+                            <div class="userProfilrimgs">
+                                <img src="../project images/dashboardImages/Balaprofile.png" class="userProfilrimg">
+                            </div>
+                            <div class="emailAndname">
+                                <p class="userName">Bala</p>
+                                <p>balamurugandckap@gmail.com</p>
+                            </div>
+                            <div class="role">
+                                <p class="userRoleType">User</p>
+                            </div>
+                            <div class="editicon">
+                                <i class="fa-regular fa-pen-to-square" id="editSymbol"></i>
+                                <p class="edHov">Edit</p>
+                            </div>
+                            <div class="deleteIcon">
+                                <i class="fa-solid fa-trash" id="deleteSymbol"></i>
+                                <p class="delHov">Delete</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="main-stock-containers">
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Total stocks</h4>
-                            <img src="../project images/dashboardImages/Quantity.png" alt="">
-                            <p class="count-stocks">670</p>
-                            <h4 class="stock-type-name">Total products</h4>
-                        </div>
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Stocks sold</h4>
-                            <img src="../project images/dashboardImages/Sales.png" alt="">
-                            <p class="count-stocks">50</p>
-                            <h4 class="stock-type-name">Total products</h4>
-                        </div>
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Remaining stocks</h4>
-                            <img src="../project images/dashboardImages/Purchase.png" alt="">
-                            <p class="count-stocks" style="color: #F81919;">2</p>
-                            <h4 class="stock-type-name">Total products</h4>
-                        </div>
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Remaining stocks</h4>
-                            <img src="../project images/dashboardImages/allUsers.png" alt="">
-                            <p class="count-stocks">2</p>
-                            <h4 class="stock-type-name">Total users</h4>
-                        </div>
+                    <div class="userinviteForm">
+    
                     </div>
                 </div>
 
 
         </section>
     </main>
-    <script src="../js/homepage.js"></script>
+    <script src="../js/inviteUser.js"></script>
 </body>
 
 </html>

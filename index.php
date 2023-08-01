@@ -9,10 +9,11 @@ session_start();
 $router = new routers();
 
 $router->get("/", "dashboard");
-$router->post("/login","loginPage");
+$router->get("/login","loginPage");
 $router->post("/loginLogic","loginLogic");
 
 $router->post("/logout","logout");
+$router->post("/invite","invite");
 
 
 $router->checking();
