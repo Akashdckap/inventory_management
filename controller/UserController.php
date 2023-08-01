@@ -26,6 +26,11 @@ class userController
         // var_dump($_POST);
         $this->userModel->loginCheck($_POST);
     }
+    public function invite()
+    {
+        require "view/inviteUser.html";
+    }
+    
     public function logout()
     {
         session_destroy();
