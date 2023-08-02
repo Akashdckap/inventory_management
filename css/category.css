@@ -31,6 +31,7 @@ body {
     display: flex;
     gap: 20px;
     padding: 15px 25px;
+    align-items: center;
 }
 
 .addNew-btn-container {
@@ -39,15 +40,16 @@ body {
     gap: 20px;
 }
 
-.product-type-container>h3 {
+.product-type-container>a {
     color: var(--secondary-text-color);
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .product-type-container .underline {
     text-decoration: underline;
     color: var(--primary-text-color);
+    font-size: 24px;
 }
 
 .stores {
@@ -138,10 +140,10 @@ h4 {
 
 .addNew-form-container {
     visibility: hidden;
-    height: 640px;
+    height: 600px;
     width: 500px;
     background-color: var(--secondary-text-color);
-    display: flex;
+    /* display: inline-block; */
     align-items: center;
     justify-content: center;
     border-radius: 8px;
@@ -156,7 +158,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     column-gap: 47px;
-    margin: 26px 11px;
+    margin: 26px 62px;
 }
 
 .innerContainer>input {
@@ -166,20 +168,18 @@ h4 {
     gap: 8px;
     border-radius: 8px;
     border: 1px solid #D0D5DD;
-    /* background: var(--white, #FFF); */
-    /* box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05); */
+    outline: none;
+    color: var(--primary-radient-color);
 }
-/* .innerContainer>input:hover,:focus{
-    border: 0.5px solid;
-} */
-
 .innerContainer>p {
     color: var(--primary-radient-color);
 }
-
+.innerContainer>input:hover,:focus{
+    border: 0.5px solid var(--primary-text-color);
+}
 .footer-container .addProduct {
     display: inline-flex;
-    padding: 10px 16px;
+    padding: 10px 11px;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -198,13 +198,9 @@ h4 {
     /* transition: 0.3s; */
     transition: all 0.5s ease;
 }
-
 .footer-container {
-    display: inline-flex;
+    margin: 0px 62px;
     float: right;
-    clear: both;
-    padding-right: 11px;
-    gap: 21px;
 }
 
 .footer-container .discard {
@@ -218,6 +214,8 @@ h4 {
     color: var(--primary-radient-color);
     background-color: var(--secondary-text-color);
     border-style: none;
+    margin: 0px 16px;
+
 }
 
 .discard:hover {
@@ -244,6 +242,8 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 37px;
+    padding-top: 33px;
+    padding-left: 30px;
 }
 
 .imageName {
@@ -251,7 +251,18 @@ h4 {
     place-items: center;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
 }
 .imageDot >input{
     cursor: pointer;
+}
+i.close {
+    float: right;
+    clear: both;
+    padding: 29px;
+    font-size: 23px;
+    cursor: pointer;
+}
+i.close:hover{
+    color: #F75D59;
 }

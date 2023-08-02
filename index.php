@@ -14,6 +14,6 @@ $router->post("/loginLogic","loginLogic");
 
 $router->post("/logout","logout");
 $router->post("/invite","invite");
-
-
+$router->post("/category","category");
+$router->post("/product","product");
 $router->checking();

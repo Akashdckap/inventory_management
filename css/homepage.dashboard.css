@@ -201,6 +201,10 @@ span.notification-icon {
     align-items: center;
     gap: 20px;
 }
+.sideNav-icon:hover{
+    color: var(--primary-text-color);
+    transition: 0.3s all ease-in-out;
+}
 
 .active {
     color: var(--primary-text-color);

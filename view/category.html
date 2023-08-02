@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory page</title>
+    <link rel="stylesheet" href="../css/homepage.dashboard.css">
     <!-- <----------Below the one line code for using icons the site name is fontawesome---------------- > -->
     <script src="https://kit.fontawesome.com/f33ac049a7.js" crossorigin="anonymous"></script>
     <!-- <----------Below the one line code for linking the external css page ---------------- > -->
-    <link rel="stylesheet" href="../css/homepage.dashboard.css">
+    <link rel="stylesheet" href="../css/category.css">
     <!-- <----------Below the one line code for linking the using icons the site name is flaticon page ---------------- > -->
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <title>Homepage Dashboard</title>
 </head>
 
 <body>
+
     <main>
         <section class="homepage-main-container">
             <header>
@@ -73,7 +76,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="/category" class="action">
+                        <a href="/invite" class="action">
                             <div class="left-nav-bar Invite-users-contain">
                                 <p class="sideNav-icon">
                                     <span><i class="fi fi-rs-users"></i></span>
@@ -116,54 +119,120 @@
                         </a> -->
                     </ul>
                 </div>
-                
                 <div class="all-count-container">
-                    <div class="organization-logo-container">
-                        <div class="organization-logo">
-                            <img src="../project images/dashboardImages/secondary logo 1.png" alt="">
+                    <p class="stores">Stores</p>
+                    <div class="product-header-part">
+                        <div class="product-type-container">
+                            <h3 class="underline">Category</h3>
+                            <a href="/product">
+                                <h3>Products</h3>
+                            </a>
                         </div>
-                        <div>
-                            <h2 class="hello-name">Hello, Bala
-                                <?php echo $_SESSION['email'];?>
-                            </h2>
-                            <p class="organization-small-name">DCKAP</p>
-                        </div>
-                        <div>
-                            <button class="new-arrivels">New arrivals</button>
+                        <div class="addNew-btn-container">
+                            <button class="addNew">Add new</button>
+                            <button class="filter"><i class="fi fi-ss-bars-filter"></i>Filters</button>
                         </div>
                     </div>
-                    <div class="main-stock-containers">
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Total stocks</h4>
-                            <img src="../project images/dashboardImages/Quantity.png" alt="">
-                            <p class="count-stocks">670</p>
-                            <h4 class="stock-type-name">Total products</h4>
+                    <div class="category-main-container">
+                        <div class="category-container">
+                            <p>Bags</p>
+                            <img src="../project images/inventory/bag.png" alt="">
+                            <h4>View Produts</h4>
                         </div>
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Stocks sold</h4>
-                            <img src="../project images/dashboardImages/Sales.png" alt="">
-                            <p class="count-stocks">50</p>
-                            <h4 class="stock-type-name">Total products</h4>
+                        <div class="category-container">
+                            <p>T Shirts</p>
+                            <img src="../project images/inventory/t.shirt.png" alt="">
+                            <h4>View Produts</h4>
                         </div>
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Remaining stocks</h4>
-                            <img src="../project images/dashboardImages/Purchase.png" alt="">
-                            <p class="count-stocks" style="color: #F81919;">2</p>
-                            <h4 class="stock-type-name">Total products</h4>
+                        <div class="category-container">
+                            <p>Rhino Toys</p>
+                            <img src="../project images/inventory/rhinoToy.png" alt="">
+                            <h4>View Produts</h4>
                         </div>
-                        <div class="stock-box-container">
-                            <h4 class="stock-name">Remaining stocks</h4>
-                            <img src="../project images/dashboardImages/allUsers.png" alt="">
-                            <p class="count-stocks">2</p>
-                            <h4 class="stock-type-name">Total users</h4>
+                        <div class="category-container">
+                            <p>Electronics</p>
+                            <img src="../project images/inventory/Electronics.png" alt="">
+                            <h4>View Produts</h4>
+                        </div>
+                        <div class="category-container">
+                            <p>Grocery</p>
+                            <img src="../project images/inventory/bag.png" alt="">
+                            <h4>View Produts</h4>
+                        </div>
+                        <div class="category-container">
+                            <p>Stationary</p>
+                            <img src="../project images/inventory/stationary.png" alt="">
+                            <h4>View Produts</h4>
+                        </div>
+                        <div class="category-container">
+                            <p>Desk Chairs</p>
+                            <img src="../project images/inventory/deskchair.png" alt="">
+                            <h4>View Produts</h4>
+                        </div>
+                        <div class="category-container">
+                            <p>Mouse</p>
+                            <img src="../project images/inventory/computerMouse.jpg" alt="">
+                            <h4>View Produts</h4>
+                        </div>
+                        <div class="category-container">
+                            <p>Pen Markar</p>
+                            <img src="../project images/inventory/mark.png" alt="">
+                            <h4>View Produts</h4>
+                        </div>
+                    </div>
+                    <div class="addNew-form-container">
+                        <div>
+                            <i class="fi fi-rs-circle-xmark close"></i>
+                        </div>
+                        <form action="#">
+                            <div class="image-container">
+                                <div class="imageDot">
+                                    <input type="file" multiple>
+                                </div>
+                                <div class="imageName">
+                                    <small>Drag image here</small>
+                                    <p>or</p>
+                                    <small style="color: #448DF2;">Browse image</small>
+                                </div>
+                                <!-- <img src="../" alt=""> -->
+                            </div>
+                            <div class="innerContainer product-container">
+                                <p class="typeName">Product Name</p>
+                                <input type="text" placeholder="Enter product name">
+                            </div>
+                            <div class="innerContainer SKU-container">
+                                <p class="typeName">SKU</p>
+                                <input type="text" placeholder="Enter product SKU">
+                            </div>
+                            <div class="innerContainer Category-container">
+                                <p class="typeName">Category</p>
+                                <input type="text" placeholder="Enter Category name">
+                            </div>
+                            <div class="innerContainer buyingPrice-container">
+                                <p class="typeName">Buying price</p>
+                                <input type="text" placeholder="Enter buying price">
+                            </div>
+                            <div class="innerContainer quantity-container">
+                                <p class="typeName">Quantity</p>
+                                <input type="text" placeholder="Enter product quantity">
+                            </div>
+                            <div class="innerContainer expireDate-container">
+                                <p class="typeName">Expire Date</p>
+                                <input type="text" placeholder="Enter expire date">
+                            </div>
+
+                        </form>
+                        <div class="footer-container">
+                            <button class="discard">Discard</button>
+                            <button class="addProduct">Add Product</button>
                         </div>
                     </div>
                 </div>
-
-
         </section>
     </main>
-    <script src="../js/homepage.js"></script>
+
+
+    <script src="../js/category.js"></script>
 </body>
 
 </html>
