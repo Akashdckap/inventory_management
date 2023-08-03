@@ -30,6 +30,11 @@ class userController
     {
         require "view/inviteUser.html";
     }
+
+    public function personalProfile()
+    {
+        require "view/profile.html";
+    }
     
     public function logout()
     {

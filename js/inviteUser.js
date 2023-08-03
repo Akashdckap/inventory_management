@@ -4,6 +4,7 @@ const editHov = document.querySelectorAll(".edHov")
 const deletelHov = document.querySelectorAll(".delHov")
 const Addinvitebtn = document.querySelector(".Addinvitebtn")
 const appenduser = document.querySelector(".userinviteForm")
+const navList = document.querySelector(".nav-list")
 
 
 
@@ -39,6 +40,7 @@ const inviteUseropa = document.querySelector(".inviteUseropa")
 Addinvitebtn.addEventListener("click",()=>{
     inviteuserCon.style.opacity = "0.2"
     inviteUseropa.style.opacity = "0.2"
+    navList.style.opacity = "0.2"
     let form = `<div class="assent">
     <div class="headinginviteusers">Invite User</div>
     <div class="line1"></div>
@@ -92,5 +94,6 @@ Addinvitebtn.addEventListener("click",()=>{
 function remove(){
     inviteuserCon.style.opacity = "1"
     inviteUseropa.style.opacity = "1"
+    navList.style.opacity = "1"
     appenduser.innerHTML = ""
 }
