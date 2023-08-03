@@ -39,6 +39,13 @@ body {
     border: 0.5px solid var(--grey-color);
 }
 
+.addNew-btn-container {
+    display: flex;
+    margin-left: 27pc;
+    gap: 20px;
+}
+
+
 .productImages {
     height: 40px;
     width: 40px;
@@ -60,7 +67,7 @@ body {
     border-style: none;
     color: var(--primary-text-color);
     border: 0.3px solid var(--grey-color);
-
+    /* margin: 0px 35px; */
     background: radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%);
 }
 
@@ -72,7 +79,7 @@ body {
 .searchBox>.fi-rs-search {
     position: relative;
     left: 38px;
-    top: 2px;
+    top: 4px;
     color: var(--grey-color);
 }
 
@@ -87,7 +94,7 @@ body {
 
 .addNew-form-container {
     visibility: hidden;
-    height: 604px;
+    height: 652px;
     width: 500px;
     background-color: var(--secondary-text-color);
     /* display: inline-block; */
@@ -95,10 +102,34 @@ body {
     justify-content: center;
     border-radius: 8px;
     position: relative;
-    bottom: 46pc;
+    bottom: 41pc;
     left: 11pc;
     z-index: 1;
 }
+.imageDot {
+    text-align: center;
+    padding: 3%;
+    height: 156px;
+    width: 195px;
+    border: 0.5px dotted black;
+}
+.imageDot > label{
+    cursor: pointer;
+}
+input#inputTag {
+    display: none;
+}
+
+
+.category{
+    color: var(--secondary-text-color);
+}
+
+.product{
+    color: var(--primary-text-color);
+}
+
+
 
 /* below the code for the table  */
 table {
