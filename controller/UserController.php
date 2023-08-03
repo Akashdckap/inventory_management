@@ -31,16 +31,22 @@ class userController
         require "view/inviteUser.html";
     }
 
-    public function personalProfile()
-    {
-        require "view/profile.html";
+    public function category(){
+        require "view/category.html";
     }
+    public function product(){
+        require "view/product.html";
+    }
+
+
     
     public function logout()
     {
         session_destroy();
         header("location:/login");
     }
+
+
 
     
 }

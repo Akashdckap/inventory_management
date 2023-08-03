@@ -18,17 +18,13 @@ class UserModel extends Database{
         $query = $this->db->prepare("SELECT * FROM users join role on role.id = users.role_type where email = '$email' AND password = '$password'");
         $check  = $query->execute();
         $details = $query->fetchAll();
-        // echo "<pre>";
-        var_dump($details[0]['type']);
-        // echo "</pre>";
+
         if($details){
                 if($details[0]['type'] == "user"){
-                    // $_SESSION['email'] = $email;
-                    // header("location:/");
                     echo "user";
                 }
                 else {
-                    $_SESSION['email'] = $email;
+                    $_SESSION['name'] = $details[0]['name'];
                     header("location:/");
 
                 }

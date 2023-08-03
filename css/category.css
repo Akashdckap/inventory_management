@@ -1,0 +1,268 @@
+/* below the code for the font-icons  */
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+/* below the code for the font-family  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+    --primary-text-color: #0DF2DC;
+    --primary-radient-color: #1A242E;
+    --secondary-text-color: #FFFFFF;
+    --background-body-color: #10161C;
+}
+
+body {
+    background-color: var(--background-body-color);
+}
+
+.product-header-part {
+    display: flex;
+}
+
+.product-type-container {
+    display: flex;
+    gap: 20px;
+    padding: 15px 25px;
+    align-items: center;
+}
+
+.addNew-btn-container {
+    display: flex;
+    margin-left: 28pc;
+    gap: 20px;
+}
+
+.product-type-container>a {
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-type-container .underline {
+    text-decoration: underline;
+    color: var(--primary-text-color);
+    font-size: 24px;
+}
+
+.stores {
+    font-size: 36px;
+    color: var(--secondary-text-color);
+    padding: 11px 25px;
+    font-weight: 500;
+}
+
+.addNew-btn-container .addNew {
+    width: 113px;
+    height: 40px;
+    border-radius: 5px;
+    color: var(--primary-radient-color);
+    background: var(--primary-color, #0DF2DC);
+    font-size: 16px;
+    border-style: none;
+    cursor: pointer;
+
+}
+
+.addNew-btn-container .addNew:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--primary-radient-color);
+}
+
+.addNew-btn-container .filter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 113px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    background-color: var(--primary-radient-color);
+    border-style: none;
+    cursor: pointer;
+}
+
+i.fi.fi-ss-bars-filter {
+    padding-right: 15px;
+}
+
+.category-container>p,
+h4 {
+    color: var(--secondary-text-color);
+}
+
+.category-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 4pc;
+    row-gap: 5pc;
+    text-align: center;
+    margin: 37px auto;
+    padding-right: 25px;
+}
+
+.category-container {
+    height: 200px;
+    width: 250px;
+    display: grid;
+    place-items: center;
+    padding: 11px;
+    /* background-color: var(--primary-radient-color); */
+    /* border-radius: 5px; */
+    border-radius: 16px;
+    background: var(--gradient-third, radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%));
+}
+
+.category-container:hover {
+    border: 0.5px solid var(--primary-text-color);
+    transition: all;
+    transform: scale(1.1 1.1);
+    cursor: pointer;
+}
+
+.category-container>img {
+    height: 70px;
+    width: 60px;
+}
+
+
+/* /<---------------------------below the codes for the add new product form ------------------------>  */
+
+.addNew-form-container {
+    visibility: hidden;
+    height: 600px;
+    width: 500px;
+    background-color: var(--secondary-text-color);
+    /* display: inline-block; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    bottom: 60pc;
+    left: 11pc;
+    z-index: 1;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 47px;
+    margin: 26px 62px;
+}
+
+.innerContainer>input {
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    outline: none;
+    color: var(--primary-radient-color);
+}
+.innerContainer>p {
+    color: var(--primary-radient-color);
+}
+.innerContainer>input:hover,:focus{
+    border: 0.5px solid var(--primary-text-color);
+}
+.footer-container .addProduct {
+    display: inline-flex;
+    padding: 10px 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    background-color: var(--primary-radient-color);
+    border-style: none;
+}
+
+.addProduct:hover {
+    border: 0.5px solid var(--secondary-text-color);
+    /* background-color: var(--secondary-text-color); */
+    color: var(--primary-text-color);
+    cursor: pointer;
+    /* transition: 0.3s; */
+    transition: all 0.5s ease;
+}
+.footer-container {
+    margin: 0px 62px;
+    float: right;
+}
+
+.footer-container .discard {
+    display: inline-flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: var(--primary-radient-color);
+    background-color: var(--secondary-text-color);
+    border-style: none;
+    margin: 0px 16px;
+
+}
+
+.discard:hover {
+    border: 0.5px solid #F75D59;
+    color: #F75D59;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.imageDot {
+    width: 192px;
+    height: 99px;
+    border-radius: 10px;
+    border: 1px dashed #9D9D9D;
+    background: var(--secondary-text-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    padding-top: 33px;
+    padding-left: 30px;
+}
+
+.imageName {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.imageDot >input{
+    cursor: pointer;
+}
+i.close {
+    float: right;
+    clear: both;
+    padding: 29px;
+    font-size: 23px;
+    cursor: pointer;
+}
+i.close:hover{
+    color: #F75D59;
+}

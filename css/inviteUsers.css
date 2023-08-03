@@ -245,9 +245,6 @@ span.notification-icon {
     gap: 26px;
     margin: 25px auto;
 }
-p{
-    color: wheat;
-}
 .stock-name {
     color: var(--secondary-text-color);
     display: flex;

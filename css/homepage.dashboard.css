@@ -1,9 +1,8 @@
-
 /* below the code for the font-icons  */
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
 
 /* below the code for the font-family  */
-  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     margin: 0;
@@ -96,6 +95,7 @@ a {
     justify-content: space-between;
     gap: 24px;
 }
+
 .search-container {
     margin: 0px 1em;
 }
@@ -105,7 +105,9 @@ input.searchInput {
     width: 300px;
     border-style: none;
     border-radius: 3px;
-    background-color: var(--primary-radient-color);
+    /* background-color: var(--primary-radient-color); */
+    border-radius: 5px;
+    background: radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%);
     /* background: radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%); */
     color: turquoise;
     padding: 0px 20px 0px 57px;
@@ -121,26 +123,31 @@ input.searchInput::placeholder {
     font-size: 14px;
     font-weight: 500;
 }
-input.searchInput:hover{
+
+input.searchInput:hover {
     border: 0.5px solid var(--primary-text-color);
     animation-name: expandWidth;
     transition: ease-in-out;
     animation-duration: 2s;
 }
-input.searchInput:focus{
+
+input.searchInput:focus {
     border: 0.5px solid var(--primary-text-color);
     animation-name: expandWidth;
     transition: ease-in-out;
     animation-duration: 2s;
 }
-@keyframes expandWidth{
-    from{
-        width:300px;
+
+@keyframes expandWidth {
+    from {
+        width: 300px;
     }
-    to{
+
+    to {
         width: 350px;
     }
 }
+
 span.search-icon {
     position: relative;
     left: 38px;
@@ -157,7 +164,7 @@ span.search-icon {
 
 
 /* body::-webkit-scrollbar { */
-    /* width: 5px;
+/* width: 5px;
 }
 
 body::-webkit-scrollbar {
@@ -172,14 +179,14 @@ body::-webkit-scrollbar {
 
 
 span.notification-icon {
-    font-size:20px;
+    font-size: 20px;
     cursor: pointer;
     color: var(--secondary-text-color);
 }
 
 .nav-list .setting-contain {
     position: relative;
-    top:50px;
+    top: 50px;
 }
 
 .nav-list>a {
@@ -193,6 +200,10 @@ span.notification-icon {
     justify-content: revert;
     align-items: center;
     gap: 20px;
+}
+.sideNav-icon:hover{
+    color: var(--primary-text-color);
+    transition: 0.3s all ease-in-out;
 }
 
 .active {
@@ -244,9 +255,11 @@ span.notification-icon {
     gap: 26px;
     margin: 25px auto;
 }
-p{
+
+p {
     color: wheat;
 }
+
 .stock-name {
     color: var(--secondary-text-color);
     display: flex;
@@ -271,27 +284,32 @@ p{
     /* background-color: #36475a; */
     /* background: var(--gradient-third, radial-gradient(418.56% 70.76% at 50.00% 50.06%, #1A242E 40.63%, #131A21 100%)); */
 }
-.new-arrivels:hover{
+
+.new-arrivels:hover {
     color: var(--primary-text-color);
-    background-color:var(--primary-radient-color);
+    background-color: var(--primary-radient-color);
     cursor: pointer;
     border: 0.5px solid var(--primary-text-color);
 }
+
 .stock-box-container p.count-stocks {
     font-size: 32px;
     font-weight: 900;
     color: var(--primary-text-color);
 }
-.stock-box-container .stock-type-name{
+
+.stock-box-container .stock-type-name {
     color: var(--secondary-text-color);
 }
-.stock-box-container:hover{
+
+.stock-box-container:hover {
     border: 0.5px solid var(--primary-text-color);
     transition: all;
     transform: scale(1.1 1.1);
     cursor: pointer;
 }
-.sideNav-name{
+
+.sideNav-name {
     font-size: 16px;
     font-weight: 550;
 }
