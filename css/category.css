@@ -36,20 +36,14 @@ body {
 
 .addNew-btn-container {
     display: flex;
-    margin-left: 28pc;
+    margin-left: 31pc;
     gap: 20px;
 }
 
 .product-type-container>a {
-    color: var(--secondary-text-color);
+    text-decoration: none;
     font-size: 20px;
     cursor: pointer;
-}
-
-.product-type-container .underline {
-    text-decoration: underline;
-    color: var(--primary-text-color);
-    font-size: 24px;
 }
 
 .stores {
@@ -99,6 +93,7 @@ h4 {
     color: var(--secondary-text-color);
 }
 
+
 .category-main-container {
     display: flex;
     flex-wrap: wrap;
@@ -134,10 +129,35 @@ h4 {
     height: 70px;
     width: 60px;
 }
+.category{
+    color: var(--primary-text-color);
+}
+
+.product{
+    color: var(--secondary-text-color);
+}
 
 
 /* /<---------------------------below the codes for the add new product form ------------------------>  */
 
+
+
+.imageDot {
+    text-align: center;
+    padding: 3%;
+    height: 156px;
+    width: 195px;
+    border: 2px dotted var(--secondary-text-color);
+    border-radius: 8px;
+}
+.imageDot > label{
+    cursor: pointer;
+}
+input#inputTag {
+    display: none;
+}
+
+q
 .addNew-form-container {
     visibility: hidden;
     height: 600px;
@@ -148,7 +168,7 @@ h4 {
     justify-content: center;
     border-radius: 8px;
     position: relative;
-    bottom: 60pc;
+    bottom: 55pc;
     left: 11pc;
     z-index: 1;
 }
@@ -171,12 +191,16 @@ h4 {
     outline: none;
     color: var(--primary-radient-color);
 }
+
 .innerContainer>p {
     color: var(--primary-radient-color);
 }
-.innerContainer>input:hover,:focus{
+
+.innerContainer>input:hover,
+:focus {
     border: 0.5px solid var(--primary-text-color);
 }
+
 .footer-container .addProduct {
     display: inline-flex;
     padding: 10px 11px;
@@ -198,6 +222,7 @@ h4 {
     /* transition: 0.3s; */
     transition: all 0.5s ease;
 }
+
 .footer-container {
     margin: 0px 62px;
     float: right;
@@ -225,7 +250,7 @@ h4 {
     cursor: pointer;
 }
 
-.imageDot {
+/* .imageDot {
     width: 192px;
     height: 99px;
     border-radius: 10px;
@@ -235,7 +260,7 @@ h4 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
+} */
 
 .image-container {
     display: flex;
@@ -253,9 +278,11 @@ h4 {
     gap: 5px;
     cursor: pointer;
 }
-.imageDot >input{
+
+/* .imageDot>input {
     cursor: pointer;
-}
+} */
+
 i.close {
     float: right;
     clear: both;
@@ -263,6 +290,7 @@ i.close {
     font-size: 23px;
     cursor: pointer;
 }
-i.close:hover{
+
+i.close:hover {
     color: #F75D59;
 }

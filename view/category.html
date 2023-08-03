@@ -9,6 +9,7 @@
     <!-- <----------Below the one line code for using icons the site name is fontawesome---------------- > -->
     <script src="https://kit.fontawesome.com/f33ac049a7.js" crossorigin="anonymous"></script>
     <!-- <----------Below the one line code for linking the external css page ---------------- > -->
+        <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/category.css">
     <!-- <----------Below the one line code for linking the using icons the site name is flaticon page ---------------- > -->
     <link rel='stylesheet'
@@ -38,7 +39,7 @@
                     <ul>
                         <a href="/" class="action">
                             <div class="left-nav-bar home-contain">
-                                <p class="sideNav-icon active">
+                                <p class="sideNav-icon">
                                     <span><i class="fi fi-rs-home"></i></span>
                                     <span class="sideNav-name">DashBoard</span>
                                 </p>
@@ -120,13 +121,10 @@
                     </ul>
                 </div>
                 <div class="all-count-container">
-                    <p class="stores">Stores</p>
                     <div class="product-header-part">
                         <div class="product-type-container">
-                            <h3 class="underline">Category</h3>
-                            <a href="/product">
-                                <h3>Products</h3>
-                            </a>
+                            <a href="/category" class="category">Category</a>
+                            <a href="/product" class="product">Products</a>
                         </div>
                         <div class="addNew-btn-container">
                             <button class="addNew">Add new</button>
@@ -187,13 +185,20 @@
                         <form action="#">
                             <div class="image-container">
                                 <div class="imageDot">
-                                    <input type="file" multiple>
+                                    <i class="fa-regular fa-image"></i>
+                                    <label for="inputTag">
+                                        Select Image <br />
+                                        <img alt="" class="image">
+                                        <input id="inputTag" type="file" />
+                                        <!-- <br /> -->
+                                        <!-- <span id="imageName"></span> -->
+                                    </label>
                                 </div>
-                                <div class="imageName">
+                                <!-- <div class="imageName">
                                     <small>Drag image here</small>
                                     <p>or</p>
                                     <small style="color: #448DF2;">Browse image</small>
-                                </div>
+                                </div> -->
                                 <!-- <img src="../" alt=""> -->
                             </div>
                             <div class="innerContainer product-container">

@@ -1,12 +1,9 @@
-let producTypeContainer = document.querySelectorAll(".product-type-container h3")
+let producTypeContainer = document.querySelectorAll(".product-type-container a")
 let closeIcon = document.querySelector("i.close")
 
 producTypeContainer.forEach(ele => {
-    ele.addEventListener("click", () => {
-        for (let i = 0; i < ele.clientHeight; i++) {
-            ele[i].classList.remove("underline")
-        }
-        ele.classList.add("underline")
+    ele.addEventListener("click", (e) => {
+        e.target.style.color = "#0DF2DC";
     })
 })
 
@@ -16,10 +13,10 @@ let discard = document.querySelector(".discard")
 const header = document.querySelector("header")
 const allContainer = document.querySelector(".all-count-container")
 
+
 addNew.addEventListener("click",addNewProduct)
 discard.addEventListener("click", discardFuntion)
 closeIcon.addEventListener("click",discardFuntion)
-
 
 function addNewProduct() {
     formContainer.style.visibility = "visible";
@@ -29,3 +26,19 @@ function addNewProduct() {
 function discardFuntion() {
     formContainer.style.visibility = "hidden";
 }   
+
+// below the code for the image part 
+
+const imgInput = document.querySelector('#inputTag')
+const imgEl = document.querySelector('.image')
+imgInput.addEventListener('change', () => {
+    if (imgInput.files && imgInput.files[0]) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            imgEl.src = e.target.result;
+            imgEl.style.height = "100px"
+            imgEl.style.width = "100px";
+        }
+        reader.readAsDataURL(imgInput.files[0]);
+    }
+})
