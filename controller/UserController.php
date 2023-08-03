@@ -30,12 +30,14 @@ class userController
     {
         require "view/inviteUser.html";
     }
+
     public function category(){
         require "view/category.html";
     }
     public function product(){
         require "view/product.html";
     }
+
 
     
     public function logout()
